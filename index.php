@@ -14,7 +14,7 @@
 
         }
         tr, td {
-            border: 1px solid black;
+            border: 1px solid black ;
             padding: 3px;
         }
 
