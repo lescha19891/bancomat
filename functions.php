@@ -17,12 +17,13 @@ if($_POST['nominal']){
     if($money % 5) {
         $min = floor($money / 5) * 5;
         $max = ceil($money / 5) * 5;
-        return "Неверная сумма. Выберите $min или $max";
+        echo "Неверная сумма. Выберите $min или $max";
     }else {
         $data = return_money($money);
-        $table = "";
-        foreach ($data as $k => $v) {
-
+        $text = "<tr><td>Номинал</td><td>Количество</td></tr>";
+        foreach ($data as $k => $v){
+        $text .="<tr><td>$k</td><td>$v</td></tr>";
         }
+        echo $text;
     }
 }

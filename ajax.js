@@ -8,7 +8,6 @@ function get_data(){
             nominal: money
         }
     }).success(function(result){
-       // alert(result);
         $("#result").html( result );
     })
  }
